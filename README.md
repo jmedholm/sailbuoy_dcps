@@ -3,7 +3,7 @@
 Two notebooks to load and correct the Sailbuoy DCPS data. These notebooks are made for the Polar Gliders research group, and adapted for their specific sensor suite on the Sailbuoy.
 
 
-### 1_correcting_mag_dec_and_gps_vel.ipynb
+## 1. 1_correcting_mag_dec_and_gps_vel.ipynb
 
 Firstly, the data is loaded from a datalogger output file, DCPS.txt. This contains data from the sensor itself, and pre-processed data from the Sailbuoy's own datalogger. This notebook uses the sensor's own data.
 
@@ -17,7 +17,7 @@ The notebook runs as follows:
 5. Add variable names and descriptions to the dataset
 6. Save the dataset as an .nc-file
 
-### 2_quality_control.ipynb
+## 2. 2_quality_control.ipynb
 
 The previously saved .nc-file is loaded, and some checks are made. For every time step, cells that have a strength limit lower than -40dB are discarded, this depth correlates well with a rise in the standard deviation for horizontal speed. Then a secondary check of the standard deviation for the sensor's recorded heading. If it is above ±20°, that whole measurement is discarded, and the same is if the maximum tilt is above 80° (90° is equal to the Sailbuoy being completely on its side for at least one of the 150 pings.
 
