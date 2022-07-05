@@ -1,2 +1,2 @@
-# sailbuoy_dcps
-Loading and correcting the DCPS data mounted on a Sailbuoy
+# Sailbuoy DCPS
+### Loading and correcting the DCPS data mounted on a Sailbuoy
